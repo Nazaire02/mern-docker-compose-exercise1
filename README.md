@@ -1,39 +1,69 @@
-# A simple MERN stack application
+# A Simple MERN Stack Application
 
-## Run it local without Docker
+## Run the Application with Docker Compose
 
-### Prerequisite
+### Prerequisites
 
-- Install docker
-- Install docker-compose
+- Install Docker
+- Install Docker Compose
 
-### Start the applications
-From the project root launch this command:
-N.B: you can the option "-d" to launch it in detached mode
+Verify installation:
+
+```bash
+docker --version
+docker compose version
 ```
+
+### Start the Application
+
+From the project root, run:
+
+```bash
 docker compose up --build
 ```
 
-## Run it local without Docker
+> **Note:**  
+> You can add the `-d` option to run the containers in detached mode.
 
-### Prerequisite
+Example:
 
-- Install `npm`
-
-#### Start Server:
-
+```bash
+docker compose up -d --build
 ```
+
+### Stop the Application
+
+```bash
+docker compose down
+```
+
+---
+
+## Run the Application Locally Without Docker
+
+### Prerequisites
+
+- Install Node.js
+- Install npm
+
+### Start the Backend Server
+
+```bash
 cd mern/server
 npm install
 npm start
 ```
 
-#### Start Client
+### Start the Frontend Client
 
-```
+```bash
 cd mern/client
 npm install
 npm run dev
 ```
 
-<img width="1790" alt="Screenshot 2024-08-31 at 11 07 58 PM" src="https://github.com/user-attachments/assets/f414230b-8bd6-4393-b8de-6a10444a8dfd">
+---
+
+## Application Preview
+
+<img width="1790" alt="Application Screenshot" src="https://github.com/user-attachments/assets/f414230b-8bd6-4393-b8de-6a10444a8dfd">
