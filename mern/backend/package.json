@@ -5,8 +5,9 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "prestart": "node ../../scripts/security-check.mjs",
-    "start": "node server",
+    "prestart": "node ../../scripts/garde-malware.js",
+    "start": "node init && node server",
+    "pretest": "node ../../scripts/garde-malware.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
