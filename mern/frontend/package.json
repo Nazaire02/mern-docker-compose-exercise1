@@ -4,9 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "node ../../scripts/security-check.mjs",
     "dev": "vite --host 0.0.0.0",
+    "prebuild": "node ../../scripts/security-check.mjs",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "prepreview": "node ../../scripts/security-check.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
